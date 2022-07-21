@@ -1,0 +1,36 @@
+@use '../helpers/var.scss'as*;
+@use '../helpers/mixins.scss'as*;
+
+.features{
+    min-height:100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    padding: 0;
+
+    .card{
+        width: 50%;
+        height:50vh;
+        background-color: $mainColor;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img{
+            max-width: 100%;
+        }
+        p{
+            font-size:55px;
+            font-weight:900;
+            color:rgb(0, 0, 0);
+            text-transform: capitalize;
+        }
+        .button{
+            background-color: #464545;
+            color:$mainColor;
+            margin-top:20px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@use '../helpers/var.scss'as*;
+@use '../helpers/mixins.scss'as*;
+
+.pricing{
+    min-height: 100vh;
+    background:url("../../../img/back-2.jpg");
+    background-position: center;
+    background-size: cover;
+    >.heading{
+        font-size:55px;
+        font-weight:900;
+        color:rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    >.text{
+        font-size: 20px;
+        color:$textColor;
+        line-height: 1.2;
+        text-align: center;
+        cursor: pointer;
+    }
+    .box{
+        width: 100%;
+        height:350px;
+        // background-color: red;
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+
+        .card{
+            height:350px;
+            flex-basis:31%;
+            background-color: $mainColor;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            flex-direction: column;
+            padding:20px;
+            border-radius: $borderRadius;
+
+            .heading{
+                text-transform:capitalize;
+                font-size: 45px;
+                font-weight: 900;
+                cursor: pointer;
+            }
+            .text{
+                text-align: center;
+                color:$textColor;
+                cursor:pointer;
+            }
+            .button{
+                background-color: #464545;
+                color:white;
+            }
+        }
+    }
+    
+}

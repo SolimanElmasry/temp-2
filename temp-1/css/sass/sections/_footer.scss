@@ -1,0 +1,123 @@
+@use '../helpers/var.scss'as*;
+@use '../helpers/mixins.scss'as*;
+
+footer{
+    width: 100%;
+    height:45vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292828;
+    padding-bottom: 10px;
+
+    div{
+        position:relative;
+        padding:30px 20px 0 ;
+    }
+    .one{
+        flex-basis: 40%;
+        height:50vh;
+        .heading{
+            font-size:55px;
+            font-weight:900;
+            color:$mainColor;
+            cursor: pointer;
+        }
+        .text{
+            line-height:1.5;
+            color:$textColor;
+        }
+        .box{
+            padding:25px;
+            position:relative;
+            width:300px;
+            height:75px;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                cursor: pointer;
+            }
+
+        }
+    }
+    .tow{
+        flex-basis: 20%;
+        height:45vh;
+        .heading{
+            font-size:45px;
+            font-weight:900;
+            text-transform: uppercase;
+            margin-bottom:25px;
+            color:$textColor;
+        }
+        ul{
+            li{
+                margin-bottom:15px;
+                text-transform: capitalize;
+                color:$textColor;
+                transition:$tr;
+                cursor: pointer;
+                &:hover{
+                    margin-left:5px
+                }
+
+
+            }
+        }
+    }
+    .three{
+        flex-basis: 20%;
+        height:45vh;
+        .heading{
+            font-size:45px;
+            font-weight:900;
+            text-transform: uppercase;
+            margin-bottom:25px;
+            color:$textColor;
+        }
+        ul{
+            li{
+                margin-bottom:15px;
+                text-transform: capitalize;
+                color:$textColor;
+                transition:$tr;
+                cursor: pointer;
+                &:hover{
+                    margin-left:5px
+                }
+
+
+            }
+        }
+
+    }
+    .fore{
+        flex-basis: 20%;
+        height:45vh;
+        
+    }
+    .heading{
+        font-size:45px;
+        font-weight:900;
+        text-transform: uppercase;
+        margin-bottom:25px;
+        color:$textColor;
+    }
+    ul{
+        li{
+            margin-bottom:15px;
+            text-transform: capitalize;
+            color:$textColor;
+            transition:$tr;
+            cursor: pointer;
+            &:hover{
+                margin-left:5px;
+                color:white;
+            }
+
+
+        }
+    }
+
+}

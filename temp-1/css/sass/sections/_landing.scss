@@ -1,0 +1,40 @@
+@use '../helpers/var.scss'as*;
+@use '../helpers/mixins.scss'as*;
+
+.landing{
+    height:60vh;
+    background: url(../../../img/landing.jpg);
+    background-size:cover;
+    background-position:felx-start;
+
+    .content-box{
+        position:absolute;
+        bottom: 0;
+        left: 30px;
+        width: 400px;
+        // height: 100px;
+        padding:20px;
+
+
+        h1{
+            font-size:65px;
+            color: $mainColor;
+            font-weight:900;
+            cursor: pointer;
+        }
+        p{
+            font-size: 18px;
+            line-height:1.5;
+            color:$textColor;
+            text-align: center;
+            cursor: pointer;
+            span{
+                font-size: 30px;
+                color:$mainColor;
+            }
+        }
+        .button{
+            margin: 5px auto;
+        }
+    }
+}

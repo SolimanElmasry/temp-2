@@ -1,0 +1,37 @@
+@use '../helpers/_var.scss'as*;
+@use '../helpers/_mixins'as*;
+
+.quote{
+    min-height:50vh;
+    background: url("../../../img/q.jpg");
+    background-size:cover;
+    background-position:center;
+    justify-content: center;
+    align-items: center;
+
+    .box{
+        width: 50%;
+        height: 200px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        q{
+            color:white;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: capitalize;
+            z-index: 10000;
+        }
+        p{
+            margin-top: 20px;
+            color:rgb(199, 199, 199);
+            font-size: 25px;
+            font-weight: 500;
+            z-index: 10000;
+            text-transform: capitalize;
+        }
+    }
+}
